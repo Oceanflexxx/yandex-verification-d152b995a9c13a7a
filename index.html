@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>Хогвартс</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">  
+        <link href="https://allfont.ru/allfont.css?fonts=lumos" rel="stylesheet" type="text/css"/>  
+  </head> 
+    <body>
+      <div><a id='top'/></div>
+      <section class="da">
+        <header>
+            <section class="top-nav">
+      <img src="img/logo.png" class="logo">
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li onclick="location.href='#we';">О нас</li>
+      <li onclick="location.href='#ground';">Группы</li>
+      <li onclick="location.href='#mem';">Команда</li>
+      <li onclick="location.href='#otz';">Отзывы</li>
+      <li onclick="location.href='#add';">Адрес</li>
+    </ul>
+  </section>
+        </header>       
+        <main>
+ <div id="slider" class="slider">
+        <div class="slider-content">
+            <div class="slider-content-wrapper">
+                <div class="slider-content__item image-1">
+                    <p class="zt"><span class="zag">Детский сад Хогвартс<br></span>
+                        Образование в «Хогвартсе» ориентировано на личность ребенка. Наша задача услышать и понять его, направляя развитие и создавая условие для гармоничного взросления сейчас, тем самым обеспечивая его успешность в будущем.<br><button onclick="location.href='#we';" class="bup">Узнать больше</button></p>
+                </div>
+                <div class="slider-content__item image-2"><p class="zt"><span class="zag">Информация для родителей<br></span>
+                        25 лет нам доверяют самое ценное – ребенка. Каждый родитель в определенный период решает, где и с кем будет развиваться его ребенок до школы. Иногда этот вопрос решается в пользу бабушки или няни. Но самая любимая бабушка или самая лучшая няня не заменит друзей и общение в коллективе.<br><button onclick="location.href='#we';" class="bup">Узнать больше</button></p>
+                </div>
+                <div class="slider-content__item image-3"><p class="zt"><span class="zag">Команда детского сада<br></span>
+                       «Хогвартс» - это компетентные педагоги и система воспитания, в центре которой ребенок и его индивидуальность. Они обучают этикету, воспитывают любовь к прекрасному, развивают личные способности ребенка, просветляют в необходимых науках.<br><button onclick="location.href='#we';" class="bup">Узнать больше</button></p>
+                </div>
+                <div class="slider-content__item image-4"><p class="zt"><span class="zag">Обучение через игру<br></span>
+                        В «Хогвартсе» используются современные методы обучения, основанные на принципах естественного развития ребенка. Игра составляет главное содержание жизни дошкольника. Через игру формируются самостоятельность, индивидуальность, навыки коммуникативного общения.<br><button onclick="location.href='#we';" class="bup" >Узнать больше</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+ <div class="les">
+ <div><a href="#top" class="idTop"><img src='img/strel.png' class="str" />
+</a></div>
+          <p class="zgl2" id="we">О детском саде</p>
+          <p class="zgl">Исполняем мечты ваших детей!</p>
+          <p class="info2">Открывая частный детский сад "Хогвартс", мы стремились создать атмосферу, которая поможет адаптироваться малышу и социализироваться в современном мире. Мы приложили максимум усилий, чтобы дети, посещающие детский сад «Хогвартс», полноценно и гармонично развивались, радуясь каждому дню, проведённому с нами. Добро пожаловать в уютную, семейную атмосферу, где Ваш малыш обретет новых друзей и поддержку!<br>
+<br>
+Стоимость пребывания 40 000 ₽ в месяц, вступительный взнос 45 000 ₽</p>
+<p class="zgl"><a class="open_modal" href="#open"><button class="bup2">Оформить заявку</button></a></p>
+<div id="modal" class="modal bounceIn">
+    <div id="close_modal">+</div>
+    <div class="signupSection">
+  <div class="info">
+    <h2>Хогвартс</h2>
+    <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+    <p>Магия всегда с тобой!</p>
+  </div>
+  <form action="#" method="POST" class="signupForm" name="signupform">
+    <h2>Оставить заявку</h2>
+    <ul class="noBullet">
+      <li>
+        <label for="Имя"></label>
+        <input type="text" class="inputFields" id="username" name="username" placeholder="Имя" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+      <li>
+          <label for="Номер телефона"></label>
+          <input type="tel" class="inputFields" id="phone" name="phone" placeholder="Номер телефона" value="" oninput="return phoneValidation(this.value)" required/>
+        </li>
+      <li>
+        <label for="Электронная почта"></label>
+        <input type="email" class="inputFields" id="email" name="email" placeholder="Электронная почта" value="" required/>
+      </li>
+      <li id="center-btn">
+        <input type="submit" id="join-btn" name="join" alt="Join" value="Оставить заявку">
+      </li>
+    </ul>
+  </form>
+</div>
+</div>
+<div id="carousel">
+    <div id="drag-container">
+        <div id="spin-container">
+            <a href="img/p2.jpg" target="_blank"><img src="img/p2.jpg" alt="" /></a>
+            <a href="img/p4.jpg" target="_blank"><img src="img/p4.jpg" alt="" /></a>
+            <a href="img/p12.jpg" target="_blank"><img src="img/p12.jpg" alt="" /></a>
+            <a href="img/p13.jpg" target="_blank"><img src="img/p13.jpg" alt="" /></a>
+            <a href="img/p14.jpg" target="_blank"><img src="img/p14.jpg" alt="" /></a>
+            <a href="img/p15.jpeg" target="_blank"><img src="img/p15.jpeg" alt="" /></a>
+            <a href="img/p16.jpg" target="_blank"><img src="img/p16.jpg" alt="" /></a>
+            <a href="img/p17.jpg" target="_blank"><img src="img/p17.jpg" alt="" /></a>
+        </div>
+        <div id="ground"></div>
+    </div>
+</div>
+            <p class="zgl">Группы</p>
+            <p class="info2">В здании оборудованы группы для всех  детей: игровые и спальные помещения с качественным ремонтом и эргономичной мебелью. <br>Группы поделены на 4 факультета.<br>
+            Возраст детей от 5-7 лет.<br>
+            Количество групп - 4.</p>
+
+            <ul class="ch-grid">
+  <li>
+    <div class="ch-item ch-img-1">
+      <div class="ch-info-wrap">
+        <div class="ch-info">
+          <div class="ch-info-front ch-img-1"></div>
+          <div class="ch-info-back1">
+            <h3>Когтевран</h3>
+            <p><a href="https://drive.google.com/drive/folders/1sgBPKrsuBl22uIUmd-2KOSYY0r7NbeDQ?usp=share_link" target="_blank">Посмотреть фото</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="ch-item ch-img-2">
+      <div class="ch-info-wrap">
+        <div class="ch-info">
+          <div class="ch-info-front ch-img-2"></div>
+          <div class="ch-info-back2">
+            <h3>Пуффендуй</h3>
+            <p> <a href="https://drive.google.com/drive/folders/1d0ymIg_IZsTeb4FklByOuD8Vuivnxsnh?usp=share_link"  target="_blank">Посмотреть фото</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+<ul class="ch-grid">
+  <li>
+    <div class="ch-item ch-img-3">
+      <div class="ch-info-wrap">
+        <div class="ch-info">
+          <div class="ch-info-front ch-img-3"></div>
+          <div class="ch-info-back3">
+            <h3>Гриффиндор</h3>
+            <p> <a href="https://drive.google.com/drive/folders/1qgafFxz5-P6cwerSKgeH5wjBuNDLxUNu?usp=share_link"  target="_blank">Посмотреть фото</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="ch-item ch-img-4">
+      <div class="ch-info-wrap">
+        <div class="ch-info">
+          <div class="ch-info-front ch-img-4"></div>
+          <div class="ch-info-back4">
+            <h3>Слизерин</h3>
+            <p> <a href="https://drive.google.com/drive/folders/1-6maulHOuHtvtbT1GrV1bbtK0fi6jVL8?usp=share_link"  target="_blank">Посмотреть фото</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<p class="zgl" id="pre">Наши преимущества</p>
+   <div class="container3">
+  <div class="card">
+    <div class="img-container">
+      <img src="img/p2.jpg  " alt=""/>
+    </div>
+    <div class="card-details">
+      <h2>Команда профессионалов</h2>
+      <p>Коллектив Детского сада «Хогвартс» состоит из талантливых педагогов, которые искренне любят то, чем занимаются. </p>
+    </div>
+  </div>
+   <div class="card">
+    <div class="img-container">
+      <img src="img/ron.jpg" alt=""/>
+    </div>
+    <div class="card-details">
+      <h2>Качественное питание</h2>
+      <p>Дети обучаются лучше, если удовлетворяются их физиологические нужды, если ребенок чувствует себя в полной безопасности физически и психологически.</p>
+    </div>
+  </div>
+   <div class="card">
+    <div class="img-container">
+      <img src="img/p8.jpg" alt=""/>
+    </div>
+    <div class="card-details">
+      <h2>Высокий уровень развития</h2>
+      <p>В процессе обучения мы используем современные методики, позволяющие эффективно построить процесс овладения умениями и навыками.</p>
+    </div>
+  </div>
+   <div class="card">
+    <div class="img-container">
+      <img src="img/p9.jpg" alt=""/>
+    </div>
+    <div class="card-details">
+      <h2>Высокая детская лояльность</h2>
+      <p>Детский сад  успешно работает и пользуется неизменной популярностью у детей и родителей.</p>
+    </div>
+  </div>
+   <div class="card">
+    <div class="img-container">
+      <img src="img/p11.jpg" alt=""/>
+    </div>
+    <div class="card-details">
+      <h2>Большая страна для маленьких</h2>
+      <p>Детский сад «Хогвартс» – это большая страна для маленьких. Это яркий Мир, где каждый ребёнок Личность, а счастливое Детство – неотъемлемое право каждого!</p>
+    </div>
+  </div>
+   <div class="card">
+    <div class="img-container">
+      <img src="img/p10.jpg" alt=""/>
+    </div>
+    <div class="card-details">
+      <h2>Территория для прогулок</h2>
+      <p>Детский сад «Гулливер располагает большой территорией для прогулок. Оборудована спортивная площадка, яркие современные малые архитектурные формы.</p>
+    </div>
+  </div>
+  </div>
+  <section class="team" id="mem">
+    <p class="zgl">Наша команда</p>
+  <ul class="list-team-members">
+  <li>
+     <a href="#">
+       <img src="img/team/kerim.jpg" />
+       <span class="member-title">Керим Ижболдин</span>
+       <span class="member-title-hover">Дамблдор</span>
+    </a>
+  </li>
+  <li>
+     <a href="#">
+       <img src="img/team/gleb.jpg" />
+       <span class="member-title">Косогоров Глеб</span>
+       <span class="member-title-hover">Шеф-повар</span>
+    </a>
+  </li>
+  
+  <li>
+     <a href="#">
+       <img src="img/team/amir.jpg" />
+       <span class="member-title">Амир Гузаиров</span>
+       <span class="member-title-hover">Главный смотрящий</span>
+    </a>
+  </li>
+  
+  <li>
+     <a href="#">
+       <img src="img/team/dora.jpg" />
+       <span class="member-title">Дора Шиханова</span>
+       <span class="member-title-hover">Преподаватель музыки</span>
+    </a>
+  </li>
+ <li>
+     <a href="#">
+       <img src="img/team/kerim.jpg" />
+       <span class="member-title">Керим Ижболдин</span>
+       <span class="member-title-hover">Дамблдор</span>
+    </a>
+  </li>
+  <li>
+     <a href="#">
+       <img src="img/team/gleb.jpg" />
+       <span class="member-title">Косогоров Глеб</span>
+       <span class="member-title-hover">Шеф-повар</span>
+    </a>
+  </li>
+  
+  <li>
+     <a href="#">
+       <img src="img/team/amir.jpg" />
+       <span class="member-title">Амир Гузаиров</span>
+       <span class="member-title-hover">Главный смотрящий</span>
+    </a>
+  </li>
+  
+  <li>
+     <a href="#">
+       <img src="img/team/dora.jpg" />
+       <span class="member-title">Дора Шиханова</span>
+       <span class="member-title-hover">Преподаватель музыки</span>
+    </a>
+  </li><li>
+     <a href="#">
+       <img src="img/team/kerim.jpg" />
+       <span class="member-title">Керим Ижболдин</span>
+       <span class="member-title-hover">Дамблдор</span>
+    </a>
+  </li>
+  <li>
+     <a href="#">
+       <img src="img/team/gleb.jpg" />
+       <span class="member-title">Косогоров Глеб</span>
+       <span class="member-title-hover">Шеф-повар</span>
+    </a>
+  </li>
+  
+  <li>
+     <a href="#">
+       <img src="img/team/amir.jpg" />
+       <span class="member-title">Амир Гузаиров</span>
+       <span class="member-title-hover">Главный смотрящий</span>
+    </a>
+  </li>
+  
+  <li>
+     <a href="#">
+       <img src="img/team/dora.jpg" />
+       <span class="member-title">Дора Шиханова</span>
+       <span class="member-title-hover">Преподаватель музыки</span>
+    </a>
+  </li>
+</ul>
+</section>
+<section class="rasp">
+  <p class="zgl">Расписание</p>
+  <p class="zgl2">Ваши дети всегда счастливы!</p>
+  <img src="img/table.jpg" class="table">
+<p class="zgl"><a href="http://club-egevichka.ru/docs/5-6.pdf?" target="_blank"><button class="bup2">Подробное расписание</button></a></p>
+</section>
+
+<section class="reviewss" id="otz">
+  <p class="zgl">Отзывы</p>
+<div class="rev-section">
+<div class="reviews">
+<div class="review">
+   <div class="head-review">
+      <img class="anton" src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" width="250px">
+   </div>
+   <div class="body-review">
+      <div class="name-review">Моряк Анастасия</div>
+      <div class="place-review">Мама Алисы</div>
+      <div class="desc-review">Мои дети ходят в этот садик 2 года, здесь они чувствуют себя очень комфортно, в сад идут с удовольствием, уходить не хотят. И мама, находясь на работе, чувствует себя спокойно. Очень хороший педагогический коллектив. Творческие, увлеченные своим делом люди. Всем рекомендую детский сад «Хогвартс».</div>
+   </div>
+</div>
+<div class="review" id="otz">
+   <div class="head-review">
+      <img class="anton" src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" width="250px">
+   </div>
+   <div class="body-review">
+      <div class="name-review">Рыбняк Александра</div>
+      <div class="place-review">Мама Никиты</div>
+      <div class="desc-review">Что для нашей семьи этот сад? Это маленький, родной, второй дом. Дом, в котором мы живем с 2020 года и не можем его оставить. Так и живем всей семьей на два дома. Да, именно всей семьей. «Хогвартс» - это любовь! Влюбленность была с первым ребенком. А теперь это настоящее крепкое чувство!</div>
+   </div>
+</div>
+<div class="review">
+   <div class="head-review">
+      <img class="anton" src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="250px">
+   </div>
+   <div class="body-review">
+      <div class="name-review">Судак Иосиф</div>
+      <div class="place-review">Отец Павла</div>
+      <div class="desc-review">В этом детском саде моему сыну дают не только образование, но и понятие того, что он — целая личность, которая имеет таланты и свои особенности. Ребенка развивают в различных сферах, не только в тех, которые ему интересны, так что к каждому маленькому посетителю детского сада подбирают индивидуальный подход в образовательной сфере</div>
+   </div>
+</div>
+
+</div>
+
+</div>
+</section>
+  <p class="zgl">Адрес</p>
+<section class="map" id="add">
+          <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4bebc6d6eaf1bcbd6b526e3a7fea121b31a17c81c36790dadd5da023f6575f30&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+        <div class="map_info">
+          <h2>НАШ АДРЕС</h2>
+          <span>Республика Татарстан, город Набережные Челны, 49/04</span
+          >
+        </div>
+      </section>
+        </main>
+<footer>
+<div class="footer">
+<div class="row">
+<a href="#"><img src="img/vk.png" class="vk"></i></a>
+<a href="#"><img src="img/inst.png" class="instagram"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#top">Главная</a></li>
+<li><a href="#we">О нас</a></li>
+<li><a href="#ground">Группы</a></li>
+<li><a href="#mem">Команда</a></li>
+<li><a href="#otz">Отзывы</a></li>
+<li><a href="#add">Адрес</a></li>
+</ul>
+</div>
+</div>
+</footer>
+    </body>
+    <script src="script.js"></script>
+</html>
